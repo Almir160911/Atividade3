@@ -13,5 +13,5 @@ services:
     container_name: db     
     environment:
       - MYSQL_USER=root
-      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-      - MYSQL_DATABASE=Atividade3    
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=loja    
