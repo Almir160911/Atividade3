@@ -1,0 +1,6 @@
+docker-compose up -d
+docker-compose exec webserver bash
+docker-compose exec db bash
+mysql -u root
+show databases;
+url : localhost:8080
