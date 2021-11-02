@@ -7,11 +7,10 @@ services:
     ports: 
     - "8080:80"
     depends_on:
-          - db
-  db:
+          - database
+  database:
     image: mysql
-    container_name: db     
+    container_name: database    
     environment:
-     - MYSQL_USER=root
      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-     - MYSQL_DATABASE=loja
+     - MYSQL_DATABASE= atividade3
